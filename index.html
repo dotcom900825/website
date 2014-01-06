@@ -18,7 +18,7 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Fixed navbar -->
     <div class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -34,9 +34,10 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="index.html#calendar">Calendar</a></li>
-            <li><a href="lab/">Lab</a></li>
+            <li class="active"><a href="#home">Home</a></li>
+            <li><a href="#calendar">Calendar</a></li>
+            <li><a href="lab/index.html">Lab</a></li>
+            <li><a href="studio.html">Studio</a></li>
             <li class="dropdown">
 			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Logistics <b class="caret"></b></a>
 		        <ul class="dropdown-menu">
@@ -44,10 +45,9 @@
 		          <li><a href="logistics.html#lab">Lab</a></li>
 		          <li><a href="logistics.html#grading">Grading</a></li>
 		          <li><a href="logistics.html#attendance">Attendance</a></li>
-		          <li><a href="logistics.html#cs77">CS 77</a></li>
 		          <li><a href="logistics.html#faq">FAQ</a></li>
 		        </ul>
-      		</li>            
+      		</li>
             <li><a href="http://www.coursera.org">Submit Work</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -59,9 +59,9 @@
 
 	<!-- this is a comment in HTML -->
 	<div class="container">
-		<div class="jumbotron">
+		<div class="jumbotron" id='home'>
   			<h1>Intro to Human-Computer Interaction Design</h1>
-  			<p>instructor name &middot; term</p>
+  			<p>COGS120/CSE170 Scott Klemmer &middot; Winter 2014 UCSD</p>
   			<!-- <p><a class="btn btn-primary btn-lg" role="button">Contact me</a></p> -->
 		</div>
 
@@ -76,35 +76,34 @@
 				<div class="col-md-4">
 					<strong>Weekly schedule</strong>
 					<ul class="list-unstyled">
-	  					<li>Lecture <span class="text-muted">Mondays 2:15-3:45pm</span></li>
-	  					<li>Lab <span class="text-muted">Wednesdays 2:15-3:45pm</span></li>
-	  					<li>Studio <span class="text-muted">Fridays 9:30-10:45am, 11am-12:15pm, or 2:15-3:30pm</span></li>
-	  					<li>Lectures in Annenberg. Studio locations vary.</li>
+	  					<li>Lecture <span class="text-muted"> Tuesdays 9:30-10:50am</span></li>
+	  					<li>Lab <span class="text-muted"> Thursday 9:30-10:50am</span></li>
+	  					<li>Available Studio Sections <span class="text-muted"> Fridays 8:20-9:30am, 9:00-10:10am, 9:40am-10:50am, 10:20-11:30am, 11:00am-12:10pm, 11:40-12:50pm, 12:20-13:30pm, 1:00-2:10pm or 13:40-14:50pm</span></li>
+	  					<li>Lectures in Peterson Hall 108. Studio locations vary.</li>
 					</ul>
 				</div>
 				<div class="col-md-4">
 					<ul class="list-unstyled">
 						<strong>Staff and office hours</strong>
-	  					<li><a href="#">Prof. Instructor Name</a> <span class="text-muted">Wednesdays 3:45-5:30pm</span></li>
-	  					<li>TAName 1 <span class="text-muted">Monday 2:15-3:45pm</span></li>
-	  					<li>TAName 2 <span class="text-muted">Monday 2:15-3:45pm</span></li>
-	  					<li>TAName 3 <span class="text-muted">Monday 2:15-3:45pm</span></li>
-	  					<li>TAName 4 <span class="text-muted">Monday 2:15-3:45pm</span></li>
+	  					<li><a href="http://d.ucsd.edu/srk/">Prof. Scott Klemmer</a> <span class="text-muted"> Tuesday/Thursday 11:00am-12:00pm</span></li>
+	  					<li>Melissa Cameron<span class="text-muted"> Thursday 16:00-17:00pm</span></li>
+	  					<li>Galit Hofree<span class="text-muted"> Friday 11:00-12:00pm</span></li>
+	  					<li>Melody Kim<span class="text-muted"> TBD</span></li>
 	  				</ul>
 				</div>
 				<div class="col-md-4">
-					<strong>&nbsp;</strong>			
+					<strong>&nbsp;</strong>
 					<ul class="list-unstyled">
-	  					<li>TAName 5 <span class="text-muted">Monday 2:15-3:45pm</span></li>
-	  					<li>TAName 6 <span class="text-muted">Monday 2:15-3:45pm</span></li>
-	  					<li>TAName 7 <span class="text-muted">Monday 2:15-3:45pm</span></li>
-	  					<li>TAName 8 <span class="text-muted">Monday 2:15-3:45pm</span></li>
-	  					<li>TAName 9 <span class="text-muted">Monday 2:15-3:45pm</span></li>  					
-	  				</ul>
+  					<li>Adam Mekrut <span class="text-muted"> Tuesday 17:00-18:00pm</span></li>
+  					<li>Laura Pina<span class="text-muted"> Thursday 13:00pm - 14:00pm</span></li>
+  					<li>Yu Xia<span class="text-muted"> Monday 10:00-11:00am</span></li>
+  					<li>Jessica Hsi<span class="text-muted"> Wednesday 12:30-13:30pm</span></li>
+
+  				</ul>
 				</div>
 			</div>
 
-			<p>Instructor bio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ac tincidunt felis, eget condimentum felis. Vestibulum porttitor accumsan erat, ut facilisis velit. Donec ligula tellus, aliquam vel sollicitudin sed, tempor ac dui. Pellentesque turpis arcu, venenatis sit amet purus ac, pellentesque facilisis massa. Nunc magna mauris, tincidunt nec egestas sed, tempor vel erat. Nunc risus est, tincidunt sed dui nec, viverra consequat diam. Curabitur faucibus tellus vitae facilisis sagittis. Fusce ultrices auctor mi, sit amet iaculis sem ultrices sit amet.</p>
+			<p><b>Instructor bio.</b> Scott is an Associate Professor of Cognitive Science and Computer Science & Engineering at UC San Diego, and a Visiting Associate Professor of Computer Science at Stanford University. Before joining UCSD, he was an Associate Professor of Computer Science at Stanford University, where he co-directed the Human-Computer Interaction Group and held the Bredt Faculty Scholar development chair. Organizations around the world use his lab's open-source design tools and curricula; several books and popular press articles have covered his research and teaching. He helped introduce peer assessment to open online education, and taught the first peer-assessed online course. He has been awarded the Katayanagi Emerging Leadership Prize, Sloan Fellowship, NSF CAREER award, and Microsoft Research New Faculty Fellowship. He has authored and co-authored more than 40 peer-reviewed articles; eight were awarded best paper or honorable mention at the premier HCI conferences (CHI/UIST/CSCW). His former graduate students are leading professors, researchers, founders, social entrepreneurs, and engineers. He has a dual BA in Art-Semiotics and Computer Science from Brown University, Graphic Design work at RISD, and an MS and PhD in Computer Science from UC Berkeley. He serves on the editorial board of TOCHI and HCI, co-chaired the UIST 2011 program, co-chaired the CHI 2010 systems area, and has served on advisory boards for academic programs, research labs, and startups passionate about interaction design.</p>
 		</div>
 		<div id="calendar" class="anchor">
 			<h3>Calendar</h3>
@@ -121,146 +120,146 @@
 		            <tr>
 		              	<td><h6>1</h6></td>
 		              	<td>
-	              			<h6>January 6</h6>
+	              			<h6>January 7</h6>
 							<p>Needfinding</p>
 						</td>
 		              	<td>
-	              			<h6>January 8</h6>
+	              			<h6>January 9</h6>
 							<p>Source control</p>
 						</td>
 		              	<td>
 		              		<h6>Due Thursday, 1/9, 11:59 pm PDT</h6>
 	              			<p><a href="./assignments/assignment01.html">Assignment 1: Waiting in Line</a></p>
-						</td>						
+						</td>
 		            </tr>
 		            <tr>
 		              	<td><h6>2</h6></td>
 		              	<td>
-	              			<h6>January 13</h6>
+	              			<h6>January 14</h6>
 							<p>Prototyping</p>
 						</td>
 		              	<td>
-	              			<h6>January 15</h6>
+	              			<h6>January 16</h6>
 							<p>Servers and styling</p>
 						</td>
 		              	<td>
 	              			<h6>Due Thursday, 1/16, 11:59 pm PDT</h6>
 							<p><a href="./assignments/assignment02.html">Assignment 2: Needfinding</a></p>
-						</td>						
+						</td>
 		            </tr>
 		            <tr>
 		              	<td><h6>3</h6></td>
 		              	<td>
-	              			<h6>January 20</h6>
+	              			<h6>January 21</h6>
 							<p>MLK Day: no class</p>
 						</td>
 		              	<td>
-	              			<h6>January 22</h6>
+	              			<h6>January 23</h6>
 							<p>Javascript and jQuery</p>
 						</td>
 		              	<td>
 	              			<h6>Due Thursday, 1/23, 11:59 pm PDT</h6>
 							<p><a href="./assignments/assignment03.html">Assignment 3: Prototyping</a></p>
-						</td>						
+						</td>
 		            </tr>
 		            <tr>
 		              	<td><h6>4</h6></td>
 		              	<td>
-	              			<h6>January 27</h6>
+	              			<h6>January 28</h6>
 							<p>Heuristic evaluation</p>
 						</td>
 		              	<td>
-	              			<h6>January 29</h6>
+	              			<h6>January 30</h6>
 							<p>Javascript and jQuery (part 2)</p>
 						</td>
 		              	<td>
 	              			<h6>Due Thursday, 1/30, 11:59 pm PDT</h6>
 							<p><a href="./assignments/assignment04.html">Assignment 4: Heuristic evaluation</a></p>
-						</td>						
+						</td>
 		            </tr>
 		            <tr>
 		              	<td><h6>5</h6></td>
 		              	<td>
-	              			<h6>February 3</h6>
+	              			<h6>February 4</h6>
 							<p>Mental models and distributing cognition</p>
 						</td>
 		              	<td>
-	              			<h6>February 5</h6>
+	              			<h6>February 6</h6>
 							<p>ExpressJS, dynamic server responses and the logged-in web</p>
 						</td>
 		              	<td>
 	              			<h6>Due Thursday, 2/6, 11:59 pm PDT</h6>
 							<p><a href="./assignments/assignment05.html">Assignment 5: Skeleton and a plan</a></p>
-						</td>						
+						</td>
 		            </tr>
 		            <tr>
 		              	<td><h6>6</h6></td>
 		              	<td>
-	              			<h6>February 10</h6>
+	              			<h6>February 11</h6>
 							<p>Visual design and information design</p>
 						</td>
 		              	<td>
-	              			<h6>February 12</h6>
+	              			<h6>February 13</h6>
 							<p>AJAX</p>
 						</td>
 		              	<td>
 	              			<h6>Due Thursday, 2/13, 11:59 pm PDT</h6>
 							<p><a href="./assignments/assignment06.html">Assignment 6: Meat on the bones</a></p>
-						</td>						
+						</td>
 		            </tr>
 		            <tr>
 		              	<td><h6>7</h6></td>
 		              	<td>
-	              			<h6>February 17</h6>
+	              			<h6>February 18</h6>
 							<p>Presidents' Day: no class</p>
 						</td>
 		              	<td>
-	              			<h6>February 19</h6>
+	              			<h6>February 20</h6>
 							<p>Database-backed web (MongoDB, mongoose)</p>
 						</td>
 		              	<td>
 	              			<h6>Due Thursday, 2/20, 11:59 pm PDT</h6>
 							<p><a href="./assignments/assignment07.html">Assignment 7: Ready for testing</a></p>
-						</td>						
+						</td>
 		            </tr>
 		            <tr>
 		              	<td><h6>8</h6></td>
 		              	<td>
-	              			<h6>February 24</h6>
+	              			<h6>February 25</h6>
 							<p>Designing experiments</p>
 						</td>
 		              	<td>
-	              			<h6>February 26</h6>
+	              			<h6>February 27</h6>
 							<p>Responsive design, web fonts, and analytics</p>
 						</td>
 		              	<td>
 	              			<h6>Due Thursday, 2/27, 11:59 pm PDT</h6>
 							<p><a href="./assignments/assignment08.html">Assignment 8: User test results and online test proposal</a></p>
-						</td>						
+						</td>
 		            </tr>
 		            <tr>
 		              	<td><h6>9</h6></td>
 		              	<td>
-	              			<h6>March 3</h6>
+	              			<h6>March 4</h6>
 							<p>Input</p>
 						</td>
 		              	<td>
-	              			<h6>March 5</h6>
+	              			<h6>March 6</h6>
 							<p>Presenting design work</p>
 						</td>
 		              	<td>
 	              			<h6>Due Thursday, 3/6, 11:59 pm PDT</h6>
 							<p><a href="./assignments/assignment09.html">Assignment 9: Results!</a></p>
-						</td>						
+						</td>
 		            </tr>
 		            <tr>
 		              	<td><h6>10</h6></td>
 		              	<td>
-	              			<h6>March 10</h6>
+	              			<h6>March 11</h6>
 							<p>Social computing</p>
 						</td>
 		              	<td>
-	              			<h6>March 12</h6>
+	              			<h6>March 13</h6>
 							<p>Creating video summaries</p>
 						</td>
 		              	<td>
@@ -268,9 +267,9 @@
 							<p><a href="./assignments/assignment10.html">Assignment 10: Final presentation</a></p>
 
 							<h6>Final presentations date TBA</h6>
-						</td>						
+						</td>
 		            </tr>
-	          	</tbody>          
+	          	</tbody>
         	</table>
 		</div>
 
